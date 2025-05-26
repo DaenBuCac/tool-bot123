@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: discord-bot
+    env: python
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: TOKEN
+        value: your_discord_bot_token_here
+      - key: OTHER_ENV_VAR
+        value: optional_value
